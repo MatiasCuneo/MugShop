@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;900&display=swap');
+
+:root {
+    --main: #F2E3DB;
+    --secondary: #41644A;
+    --secondary-dark: #263A29;
+    --accent: #E86A33;
+    --font-family: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+/* ========== MAIN ========== */
+
+main {
+    background-image: url(../public/imgs/mug_bg.png);
+    height: 65%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.bg {
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+    filter: blur(5px);
+}
+
+main h1 {
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 3.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    width: 80%;
+    line-height: 65px;
+}
+
+/* ========== INFO SECTION ========== */
+
+.info {
+    background-color: var(--accent);
+    position: absolute;
+    width: 100%;
+    height: 35%;
+    bottom: 0;
+    left: 0;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5em;
+    padding: 2.5em;
+}
+
+.desc {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.desc_icon {
+    width: 60px;
+    aspect-ratio: 1;
+}
+
+.desc .separator {
+    width: 5px;
+    background-color: white;
+}
+
+.content {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.content p {
+    color: white;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.content a {
+    display: flex;
+    align-items: center;
+    gap: .5em;
+    color: white;
+}
+
+/* ========== REDUCED SIZE ========== */
+@media screen and (max-width: 1200px) {
+
+}
