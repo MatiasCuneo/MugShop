@@ -94,7 +94,7 @@ nav,
 .search_bar {
     width: 100%;
     border-radius: 10px;
-    border: 4px solid var(--secondary-dark);
+    border: 2px solid var(--secondary-dark);
     padding-left: 2.5rem;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }

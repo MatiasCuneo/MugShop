@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../styles/main.css">
+        <link rel="stylesheet" href="../styles/navbar.css">
+        <title>Ingresar</title>
+    </head>
+    <body>
+        <input type="checkbox" style="display:none;" name="hamburger" id="hamburger">
+        <label for="hamburger" class="hamburger" id="ham">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </label>
+        <nav id="nav">
+            <img src="../public/imgs/logo.png" alt="logo" class="logo">
+            <ul class="nav_opts">
+                <li class="nav_opt nav_search">
+                    <form action="#" method="get">
+                        <input type="text" class="search_bar" name="search" id="search" placeholder="Buscar..." required maxlength="20">
+                    </form>
+                </li>
+                <div class="nav_space">
+                    <li class="nav_opt">
+                        <img src="../public/imgs/cart.svg" alt="cart" class="nav_icon">
+                        <a href="#">Carrito</a>
+                    </li>
+                    <li class="nav_opt">
+                        <img src="../public/imgs/book-open.svg" alt="book" class="nav_icon">
+                        <input type="checkbox" name="dropdown" id="dropdown">
+                        <div class="catalogue">
+                            <h2>(TBD)</h2>
+                        </div>
+                        <label for="dropdown">Descubrir</label>
+                    </li>    
+                </div>
+                <div class="separator"></div>
+                <div class="nav_space">
+                    <li class="nav_opt">
+                        <a href="login.html">Ingresar</a>
+                    </li>
+                    <li class="nav_opt">
+                        <a href="#"><strong>Registrate</strong></a>
+                    </li>    
+                </div>
+            </ul>
+        </nav>
+        <div class="login">
+            <form action="#" method="get">
+                <h1>Ingresar</h1>
+                <div class="form_input">
+                    <label for="usuario">Ingresar Nombre de Usuario</label>
+                    <input type="text" name="usuario" id="usuario" placeholder="Nombre de Usuario" required>
+                </div>
+                <div class="form_input">
+                    <label for="password">Ingresar Contraseña</label>
+                    <input type="text" name="password" id="password" placeholder="Contraseña" required>
+                </div>
+                <button type="submit">Ingresar</button>
+            </form>
+            <img src="imgs/login.svg" alt="login">
+        </div>
+        <footer>
+            <h4><strong>MugShop </strong>2023</h4>
+            <div class="redes">
+                <a href="#"><img src="imgs/instagram.svg" alt="instagram" class="red"></a>
+                <a href="#"><img src="imgs/facebook.svg" alt="facebook" class="red"></a>
+                <a href="#"><img src="imgs/twitter.svg" alt="twitter" class="red"></a>
+            </div>
+        </footer>
+        <script src="../js/hamburguer.js"></script>
+    </body>
+</html>
